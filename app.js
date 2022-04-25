@@ -63,6 +63,6 @@ app.get("/posts/:postName", (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server started`);
 });
